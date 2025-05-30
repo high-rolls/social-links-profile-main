@@ -46,8 +46,8 @@ body {
 }
 
 .avatar {
-    width: 5rem;
-    height: 5rem;
+    width: 5.625rem;
+    height: 5.625rem;
     margin-block-end: 1.5rem;
     border-radius: 50%;
     background-color: var(--color-gray-700);
@@ -90,7 +90,7 @@ body {
 }
 
 .subtitle {
-    margin-block-end: 1.5rem;
+    margin-block-end: 1.875rem;
     font-size: var(--font-size-sm);
     color: var(--color-green);
 }
