@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+    /*
+    - Green: hsl(75, 94%, 57%)
+
+    - White: hsl(0, 0%, 100%)
+
+    - Grey 700: hsl(0, 0%, 20%)
+    - Grey 800: hsl(0, 0%, 12%)
+    - Grey 900: hsl(0, 0%, 8%)
+    */
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-900: hsl(0, 0%, 8%);
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.3125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2.625rem;
+    --font-size-4xl: 4rem;
+    --letter-spacing-tight: -0.05em;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100dvh;
+    font-size: var(--font-size-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
+}
+
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    margin-block-end: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--color-gray-700);
+}
+
+.card {
+    box-sizing: border-box;
+    width: 20.5rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-align: center;
+    background-color: var(--color-gray-800);
+}
+
+.link {
+    padding: .9rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    background-color: var(--color-gray-700);
+    color: var(--color-white);
+}
+
+.link:hover, .link:active, .link:focus {
+    background-color: var(--color-green);
+    color: var(--color-gray-700);
+}
+
+.links {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 1rem;
+}
+
+.title {
+    margin-block-end: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-block-end: 1.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-green);
+}
+
+.summary {
+    margin-block-end: 1.5rem;
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+@media screen and (min-width: 26.625rem) {
+    .card {
+        width: 24.125rem;
+        padding: 2.5rem;
+    }
+}
